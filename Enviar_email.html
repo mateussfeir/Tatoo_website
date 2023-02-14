@@ -5,22 +5,29 @@
     <title>Enviar e-mail</title>
     <style>
         body {
+            background-image: url("enviar_email_background.jpeg");
             background-color: black;
+            background-repeat: no-repeat;
+            background-position: center;
             color: white;
         }
     </style>
 </head>
 <body>
     <table cellspacing = 20>
-        <h2>Enviar e-mail</h2>
-    </table>
-    <form class="" action="index.html" method="post"></form>
-        <label>Nome:</label>
-        <input type="text" name="" value=""><br><br>
-        <label>Qual data gostaria de tatuar?</label><br><br>
-        <input type="date"><br><br>
-        <label>Gostaria de receber nossas promoções?</label>
-        <input type="checkbox"><br>
-        <input type="submit" name="" value="Enviar">
-</body>
-</html>
+        <td>
+            <h2>Enviar e-mail</h2>
+            <form class="" action="mailto:mateussfeir@hotmail.com" method="post" enctype="text/plain">
+                <label>Nome:</label>
+                <input type="text" name="Nome " value=""><br><br>
+                <label>E-mail:</label>
+                <input type="email" name="Email " value=""><br><br>
+                <label>Envie uma imagem de referência (opcional):</label><br><br>
+                <input type="file" name="" id=""><br><br>
+                <label">Conte-nos um pouco mais sobre a idea que tem em mente sobre a tatuagem (opcional):</label><br><br>
+                <textarea name="Mensagem " id="" cols="30" rows="10"></textarea><br><br>
+                <label>Qual data gostaria de tatuar?</label><br><br>
+                <input type="date"><br><br>
+                <label>Gostaria de receber nossas promoções?</label>
+                <input type="checkbox"><br>
+                <input type="submit" name="" value="Enviar"></form>
